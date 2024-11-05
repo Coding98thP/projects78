@@ -3,165 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <link rel="stylesheet" href="Style.css">
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <title>Ping Pong Game</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Background Style */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Container for Centering Content */
+    .container {
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+      padding: 24px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+    }
+
+    /* Title Style */
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #bb86fc;
+      font-weight: 500;
+    }
+
+    /* Subtitle Styling */
+    p.subtitle {
+      color: #a1a1a1;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Video Wrapper Styling */
+    .video-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      color: #a1a1a1;
+      font-size: 0.9rem;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer span {
+      color: #bb86fc;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
-  <div id="particles-js"></div> <!-- Particles Container -->
-  
-  <h1 class="title">Projects</h1>
-  <div class="project-grid">
-    <a href="https://coding98thp.github.io/gogreen/" class="project-tile" target="_blank">
-      <img src="sust.jpg" alt="Project 1 Image">
-      <div class="content">
-        <h2>Go Green</h2>
-        <p>Embrace Green, Live Clean</p>
-      </div>
-    </a>
-    <a href="https://coding98thp.github.io/pingpong" class="project-tile" target="_blank">
-      <img src="pingpong.jpeg" alt="Project 2 Image">
-      <div class="content">
-        <h2>Restaurant Menu</h2>
-        <p>Delicious food made with love</p>
-      </div>
-    </a>
-    <a href="https://coding98thp.github.io/aquarium/" class="project-tile" target="_blank">
-      <img src="project3.jpg" alt="Project 3 Image">
-      <div class="content">
-        <h2>Aquarium</h2>
-        <p>Quantum Realities</p>
-      </div>
-    </a>
-    <a href="project4.html" class="project-tile" target="_blank">
-      <img src="project4.jpg" alt="Project 4 Image">
-      <div class="content">
-        <h2>Project 4</h2>
-        <p>Angry man</p>
-      </div>
-    </a>
-    <a href="project5.html" class="project-tile" target="_blank">
-      <img src="project5.jpg" alt="Project 5 Image">
-      <div class="content">
-        <h2>Project 5</h2>
-        <p>Tom</p>
-      </div>
-    </a>
+  <div class="container">
+    <h1>Ping Pong Game</h1>
+    <p class="subtitle">An engaging game created using Python</p>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/0Fb6mjqhBqc" title="Ping Pong Game Using Python" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
   </div>
-  
-  <!-- Footer Section -->
   <footer>
-    <p>© 2024 98thPercentile. All Rights Reserved.</p>
+    © 2024 <span>98thPercentile</span>. All Rights Reserved.
   </footer>
-
-  <script src="script.js"></script>
-  <script>
-    // Particles.js configuration
-    particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 100,
-          density: {
-            enable: true,
-            value_area: 800
-          }
-        },
-        color: {
-          value: "#00ccff"
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000000"
-          },
-          polygon: {
-            nb_sides: 5
-          }
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false
-          }
-        },
-        size: {
-          value: 5,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false
-          }
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#00ccff",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 6,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200
-          }
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onclick: {
-            enable: true,
-            mode: "push"
-          },
-          resize: true
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1
-            }
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4
-          },
-          push: {
-            particles_nb: 4
-          },
-          remove: {
-            particles_nb: 2
-          }
-        }
-      },
-      retina_detect: true
-    });
-  </script>
 </body>
 </html>
