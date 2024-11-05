@@ -31,7 +31,7 @@ body {
 
 .project-grid {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
   z-index: 1;
@@ -43,7 +43,7 @@ body {
   height: 300px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
-  border: 2px solid #00ccff;
+  border: 2px solid #fff;
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -55,8 +55,8 @@ body {
   width: 100%;
   height: 60%;
   object-fit: cover;
-  border-bottom: 2px solid #00ccff;
-  position: absolute;
+  border-bottom: 2px solid #fff;
+  position:absolute;
   top: 0;
   left: 0;
 }
@@ -72,13 +72,13 @@ body {
 
 .project-tile h2 {
   font-size: 1.3rem;
-  color: #00ccff;
+  color: #fff;
   margin: 10px 0 5px;
 }
 
 .project-tile p {
   font-size: 0.9rem;
-  color: #b3e5ff;
+  color: #e5e5e5;
   margin: 0 10px 10px;
 }
 
